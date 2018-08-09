@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Split a String from Space</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+    function splitArray(){
+        var myStr = "quick brown fox";
+        var strArray = myStr.split(" ");
+        
+        // Display array values on page
+        for (var i = 0; i < strArray.length; i++) {
+            $("body").append("<p>" + strArray[i] + "</p>");
+        }
+    }
+</script>
+</head> 
+<body>
+    <p>Click the following button to split myStr string and show returned array values using for loop</p>
+    <button type="button" onclick="splitArray();">Show Splitted Values</button>
+</body>
+</html>
